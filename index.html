@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ปฏิทินธรรม — วันสำคัญทางพระพุทธศาสนาไทย</title>
+  <meta name="description" content="นับถอยหลังสู่วันสำคัญทางพระพุทธศาสนาไทย ทั้งมาฆบูชา วิสาขบูชา อาสาฬหบูชา เข้าพรรษา และออกพรรษา พร้อมความหมาย วิดีโอ และเว็บไซต์พุทธศาสนาที่น่าสนใจ">
+  <meta name="theme-color" content="#0d2b33">
+  <meta property="og:title" content="ปฏิทินธรรม — วันสำคัญทางพระพุทธศาสนาไทย">
+  <meta property="og:description" content="รู้ว่าวันสำคัญทางพุทธศาสนาครั้งต่อไปคือเมื่อไร และวันนั้นสอนอะไรเรา">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Thai:wght@500;700&family=Sarabun:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip" href="#main">ข้ามไปยังเนื้อหา</a>
+
+  <header class="site-header" id="top">
+    <div class="wrap bar">
+      <a class="brand" href="#top" aria-label="ปฏิทินธรรม กลับขึ้นด้านบน">
+        <svg class="brand-moon" viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="16" r="13" fill="#f4c56a"/><circle cx="21" cy="12" r="11" fill="#0d2b33"/></svg>
+        <span>ปฏิทินธรรม</span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span class="sr">เมนู</span>
+        <span class="bars" aria-hidden="true"></span>
+      </button>
+
+      <nav class="site-nav" id="site-nav" aria-label="เมนูหลัก">
+        <ul>
+          <li><a href="#countdown">นับถอยหลัง</a></li>
+          <li><a href="#days">ความหมายของวัน</a></li>
+          <li><a href="#calendar">ปฏิทิน</a></li>
+          <li><a href="#videos">วิดีโอ</a></li>
+          <li class="has-menu">
+            <button type="button" class="menu-btn" aria-expanded="false" aria-controls="links-menu">เว็บไซต์พุทธศาสนา</button>
+            <ul class="submenu" id="links-menu"></ul>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- ===== นับถอยหลัง ===== -->
+    <section class="hero" id="countdown" aria-labelledby="hero-title">
+      <div class="stars" aria-hidden="true"></div>
+      <div class="wrap hero-grid">
+        <div class="hero-text">
+          <p class="kicker" id="hero-kicker">วันสำคัญทางพระพุทธศาสนาถัดไป</p>
+          <h1 id="hero-title">กำลังคำนวณวัน…</h1>
+          <p class="hero-date" id="hero-date"></p>
+          <blockquote class="essence" id="hero-essence"></blockquote>
+
+          <div class="timer" id="timer" role="timer" aria-live="off">
+            <div class="unit"><span class="num" id="t-d">–</span><span class="lbl">วัน</span></div>
+            <div class="unit"><span class="num" id="t-h">–</span><span class="lbl">ชั่วโมง</span></div>
+            <div class="unit"><span class="num" id="t-m">–</span><span class="lbl">นาที</span></div>
+            <div class="unit"><span class="num" id="t-s">–</span><span class="lbl">วินาที</span></div>
+          </div>
+          <p class="today-banner" id="today-banner" hidden></p>
+
+          <p class="hero-actions"><a class="btn" href="#days" id="hero-more">อ่านความหมายของวันนี้</a></p>
+        </div>
+
+        <div class="moon-wrap" aria-hidden="true">
+          <svg class="ring" viewBox="0 0 200 200">
+            <circle class="ring-track" cx="100" cy="100" r="92"/>
+            <circle class="ring-bar" id="ring-bar" cx="100" cy="100" r="92" transform="rotate(-90 100 100)"/>
+          </svg>
+          <div class="moon"></div>
+          <p class="moon-cap" id="moon-cap"></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== ความหมายของวัน ===== -->
+    <section class="section light" id="days" aria-labelledby="days-title">
+      <div class="wrap">
+        <h2 id="days-title">ห้าวันสำคัญ ห้าข้อคิดสำหรับชีวิต</h2>
+        <p class="lead">วันสำคัญทางพระพุทธศาสนาไม่ใช่แค่วันหยุด แต่เป็นวันที่ชวนระลึกถึงเหตุการณ์ในพุทธประวัติ และนำหลักธรรมกลับมาใช้ในชีวิตประจำวัน เลือกวันด้านล่างเพื่ออ่านความหมายแบบสั้น ๆ</p>
+
+        <div class="tabs" role="tablist" aria-label="วันสำคัญทางพระพุทธศาสนา" id="day-tabs"></div>
+        <div class="panel" id="day-panel" role="tabpanel" tabindex="0"></div>
+      </div>
+    </section>
+
+    <!-- ===== ปฏิทิน ===== -->
+    <section class="section dark" id="calendar" aria-labelledby="cal-title">
+      <div class="wrap">
+        <h2 id="cal-title">ปฏิทินวันสำคัญ พ.ศ. ๒๕๖๙ – ๒๕๗๑</h2>
+        <p class="lead">วันสำคัญทางพุทธศาสนากำหนดตามปฏิทินจันทรคติ วันที่จึงเปลี่ยนไปทุกปี และในปีที่มีเดือน ๘ สองหน (อธิกมาส) วันสำคัญจะเลื่อนไปหนึ่งเดือน</p>
+        <div id="cal-list" class="cal"></div>
+        <p class="note">วันที่อ้างอิงจากปฏิทินจันทรคติไทยและประกาศวันหยุดที่เผยแพร่ หากมีประกาศเปลี่ยนแปลง ให้ยึดตามประกาศทางราชการล่าสุด</p>
+      </div>
+    </section>
+
+    <!-- ===== วิดีโอ ===== -->
+    <section class="section light" id="videos" aria-labelledby="vid-title">
+      <div class="wrap">
+        <h2 id="vid-title">ดูและฟังเรื่องวันสำคัญ</h2>
+        <p class="lead">คลิปคัดมาจาก YouTube และ TikTok กดที่การ์ดเพื่อเปิดดูในหน้านี้ หากคลิปใดเล่นไม่ได้ ให้กด “เปิดที่ต้นทาง”</p>
+
+        <div class="filters" id="filters" aria-label="กรองวิดีโอ">
+          <div class="chips" id="f-day" role="group" aria-label="กรองตามวัน"></div>
+          <div class="chips" id="f-platform" role="group" aria-label="กรองตามแพลตฟอร์ม"></div>
+        </div>
+
+        <div class="vgrid" id="vgrid"></div>
+        <p class="empty" id="v-empty" hidden>ยังไม่มีวิดีโอในหมวดนี้</p>
+      </div>
+    </section>
+
+    <!-- ===== ลิงก์ ===== -->
+    <section class="section dark" id="links" aria-labelledby="links-title">
+      <div class="wrap">
+        <h2 id="links-title">เว็บไซต์พุทธศาสนาที่น่าสนใจ</h2>
+        <p class="lead">อ่านต่อ ค้นคว้าต่อ หรือหาข้อมูลกิจกรรมในพื้นที่ของคุณได้จากเว็บไซต์เหล่านี้ ทุกลิงก์เปิดในแท็บใหม่</p>
+        <ul class="links" id="links-list"></ul>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <p><strong>ปฏิทินธรรม</strong> เว็บไซต์เพื่อการเรียนรู้วันสำคัญทางพระพุทธศาสนาไทย</p>
+      <p class="small">วิดีโอเป็นของเจ้าของช่องและแพลตฟอร์มต้นทาง เว็บไซต์นี้เพียงฝังเพื่อแนะนำ ไม่ได้เป็นเจ้าของเนื้อหา</p>
+    </div>
+  </footer>
+
+  <!-- หน้าต่างเล่นวิดีโอ -->
+  <div class="modal" id="modal" hidden>
+    <div class="modal-backdrop" data-close></div>
+    <div class="modal-box" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+      <div class="modal-head">
+        <h3 id="modal-title"></h3>
+        <button type="button" class="modal-x" data-close aria-label="ปิดวิดีโอ">ปิด</button>
+      </div>
+      <div class="modal-stage" id="modal-stage"></div>
+      <p class="modal-foot"><a id="modal-src" href="#" target="_blank" rel="noopener noreferrer">เปิดที่ต้นทาง</a></p>
+    </div>
+  </div>
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
